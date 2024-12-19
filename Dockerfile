@@ -1,2 +1,5 @@
+# Use Nginx to serve the built files
 FROM nginx:alpine
-COPY streams-charts-100/dist /usr/share/nginx/html
+
+# Copy the built files from the first stage
+COPY dist /usr/share/nginx/html
